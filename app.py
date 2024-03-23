@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import dash
+import gradio as gr
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
@@ -51,3 +52,6 @@ def display_page(pathname):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
+
+iface = gr.Interface(fn=app, inputs="text", outputs="text")
+iface.launch()
