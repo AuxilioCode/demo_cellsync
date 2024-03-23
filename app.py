@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import dash
-import gradio as gr
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
@@ -52,11 +51,3 @@ def display_page(pathname):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
-
-gradio_app = gr.Interface(
-    app,
-    title="Dashboard",
-)
-
-if __name__ == "__main__":
-    gradio_app.launch()
