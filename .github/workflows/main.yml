@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://neil51:$HF_TOKEN@https://huggingface.co/spaces/neil51/dashboard main
+        run: git push https://AuxilioCode:$HF_TOKEN@https://huggingface.co/spaces/neil51/dashboard main
