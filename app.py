@@ -53,5 +53,10 @@ def display_page(pathname):
 if __name__ == "__main__":
     app.run_server(debug=True)
 
-iface = gr.Interface(fn=app, inputs="text", outputs="text")
-iface.launch()
+gradio_app = gr.Interface(
+    app,
+    title="Dashboard",
+)
+
+if __name__ == "__main__":
+    gradio_app.launch()
